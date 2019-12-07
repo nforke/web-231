@@ -33,7 +33,7 @@ function myLastName(){
 myName.Nicole = "Nicole";
 myLastName.Forke = "Forke";
 
-console.log(header.display("Nicole", "Forke", "Exercise 2.2 - Header"));
+console.log(header.display("Nicole", "Forke", "Assignment 2.3"));
 console.log("Hello " +  myName() + ' ' + myLastName() + "!");
 
 //end program
