@@ -29,6 +29,8 @@
  * Disclaimer: Do not remove this function as this is what you will be using to generate a random number
  */
 
+ // start program
+
  // variable
  var x = 6;
 
