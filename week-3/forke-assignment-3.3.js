@@ -13,6 +13,8 @@
   The enter key was pressed
 */
 
+// start program
+
 // variables
 let eventKeyCode = 13;
 
@@ -38,3 +40,5 @@ switch (eventKeyCode) {
     console.log('Unrecognized key.');
     break;
 }
+
+// end program
