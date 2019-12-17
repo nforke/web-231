@@ -21,4 +21,4 @@ a.length = 3;
 var sum = areduce(function(x, y) { return x + y });
 
 //output showing the array length (3) and the sum of the arrays (80):
-console.log( "There are" + alength + "arrays" + "and" + "here is the sum of the arrays" + ' ' + sum + ".");
+console.log( "There are" + ' ' + alength ' ' + "arrays" + "and" + "here is the sum of the arrays" + ' ' + sum + ".");
