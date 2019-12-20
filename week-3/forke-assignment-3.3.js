@@ -13,6 +13,10 @@
   The enter key was pressed
 */
 
+//statement that displays personal header
+const header = require('./forke-header.js');
+console.log(header.display("Nicole", "Forke", "Assignment 3.3"));
+
 // start program
 
 // variables

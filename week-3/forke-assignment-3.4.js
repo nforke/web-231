@@ -29,6 +29,10 @@
  * Disclaimer: Do not remove this function as this is what you will be using to generate a random number
  */
 
+ //statement that displays personal header
+const header = require('./forke-header.js');
+console.log(header.display("Nicole", "Forke", "Assignment 3.4"));
+
  // start program
 
  // variable
