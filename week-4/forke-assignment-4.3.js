@@ -31,7 +31,7 @@
 
 //statement that displays personal header
 const header = require('./forke-header.js');
-console.log(header.display("Nicole", "Forke", "Assignment 4.2",));
+console.log(header.display("Nicole", "Forke", "Assignment 4.3",));
 
 // start program
 
