@@ -22,11 +22,11 @@
   Pear
 */
 
-// start program
-
 //statement that displays personal header
 const header = require('./forke-header.js');
 console.log(header.display("Nicole", "Forke", "Assignment 4.2",));
+
+// start program
 
 // declared variable using an array for fruits
 var fruits = [ "\nApple", "Orange", "Banana", "Mango", "Pear"];
