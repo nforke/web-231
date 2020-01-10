@@ -1,10 +1,10 @@
 /*
 ====================================================
-; Title:  Discussion 5.2
+; Title:  Discussion 5.3
 ; Author: Nicole Forke
 ; Date:   10 January 2020
 ; Modified By: Nicole Forke
-; Description: ES5 Built-In Functions
+; Description: Object Collections
 ;===================================================
 */
 
