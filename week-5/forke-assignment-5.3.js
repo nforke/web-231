@@ -1,27 +1,32 @@
 /*
-====================================================
-; Title:  Discussion 5.3
+=========================================================
+; Title:  Exercise 5.3
 ; Author: Nicole Forke
 ; Date:   10 January 2020
 ; Modified By: Nicole Forke
-; Description: Object Collections
-;===================================================
+; Description: Filtering/Reducing Complex Data Structures
+;========================================================
 */
 
 /*
-  Expected Output:
+  Expected output:
 
-  --COMPOSERS--
-  Last Name: Williams, Genre: Classical, Rating: 10
-  Last Name: Goldsmith, Genre: Film Score, Rating: 8
-  Last Name: Morricone, Genre: Classical, Rating: 5
-  Last Name: Zimmer, Genre: Film Score, Rating: 9
+  FirstName LastName
+  Exercise 5.3
+  Today's Date
 
+  -- COMPOSERS --
+  Last Name: Beethoven, Genre: Classical, Rating: 8
+  Last Name: Mozart, Genre: Classical, Rating: 10
+  Last Name: Bach, Genre: Classical, Rating: 9
+  Last Name: Haydn, Genre: Classical, Rating: 6
+  Last Name: Schubert, Genre: Classical, Rating: 5
 */
+
 
 //statement that displays personal header
 const header = require('./forke-header.js');
-console.log(header.display("Nicole", "Forke", "Discussion 5.2",));
+console.log(header.display("Nicole", "Forke", "Exercise 5.3",));
 
 //start program
 
@@ -31,35 +36,47 @@ console.log("");
 //create array like objects
 var composers = [
   {
-    firstName:'John',
-    lastName:'Williams',
+    firstName:'Ludwig Van',
+    lastName:'Beethoven',
+    genre:'Classical',
+    rating:8,
+  },
+  {
+    firstName:'Wolfgang Amadeus',
+    lastName:'Mozart',
     genre:'Classical',
     rating:10,
   },
   {
-    firstName:'Jerry',
-    lastName:'Goldsmith',
-    genre:'Film Score',
-    rating:8,
+    firstName:'Johann Sebastian',
+    lastName:'Bach',
+    genre:'Classical',
+    rating:9,
   },
   {
-    firstName:'Ennio',
-    lastName:'Morricone',
+    firstName:'Joseph',
+    lastName:'Haydn',
+    genre:'Classical',
+    rating:6,
+  },
+  {
+    firstName:'Franz',
+    lastName:'Schubert',
     genre:'Classical',
     rating:5,
-  },
-  {
-    firstName:'Hans',
-    lastName:'Zimmer',
-    genre:'Film Score',
-    rating:9,
   }
 ];
 
+//variable declaration
+var title = "--COMPOSERS--";
+
+//variable output
+console.log(title);
+
 //iterating over the array for output
-composers.forEach(function(composers) {
+composers.forEach(function(composer) {
   console.log(
-    "Last Name: " + composers.lastName + ", Genre: " + composers.genre + ", Rating: " + composers.rating);
+    "Last Name: " + composer.lastName + ", Genre: " + composer.genre + ", Rating: " + composer.rating);
 });
 
 //end program

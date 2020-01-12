@@ -1,6 +1,6 @@
 /*
 ====================================================
-; Title:  Discussion 5.2
+; Title:  Exercise 5.2
 ; Author: Nicole Forke
 ; Date:   10 January 2020
 ; Modified By: Nicole Forke
@@ -11,6 +11,10 @@
 /*
   Expected Output:
 
+  FirstName LastName
+  Exercise 5.2
+  Today's Date
+
   Yogurt
   Chicken
   Fish
@@ -20,7 +24,7 @@
 
 //statement that displays personal header
 const header = require('./forke-header.js');
-console.log(header.display("Nicole", "Forke", "Discussion 5.2",));
+console.log(header.display("Nicole", "Forke", "Exercise 5.2",));
 
 //start program
 
