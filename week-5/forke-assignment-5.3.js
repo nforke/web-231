@@ -4,7 +4,7 @@
 ; Author: Nicole Forke
 ; Date:   10 January 2020
 ; Modified By: Nicole Forke
-; Description: Filtering/Reducing Complex Data Structures
+; Description: Object Collections using Arrays
 ;========================================================
 */
 
