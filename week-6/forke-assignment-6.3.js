@@ -70,6 +70,6 @@ customer.userName = "Help Desk Support";
 customer.userRequestor = "Bob Jones";
 
 //output
-console.log("{id:" + " " + customer.userId + "," + " " + "name:" + " " + customer.userName + "," + " " + "requestor:" + " " + customer.userRequestor + "}");
+console.log("{id: " + customer.userId + ", " + "name: " + customer.userName + ", " + "requestor: " + customer.userRequestor + "}");
 
 //end program
