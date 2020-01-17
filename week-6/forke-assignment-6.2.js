@@ -1,8 +1,8 @@
 /*
 =========================================================
-; Title:  Exercise 6.3
+; Title:  Exercise 6.2
 ; Author: Nicole Forke
-; Date:   6 January 2020
+; Date:   16 January 2020
 ; Modified By: Nicole Forke
 ; Description: Exception Handling
 ;========================================================
