@@ -1,0 +1,73 @@
+<!--
+=========================================================
+; Title:  Exercise 7.3
+; Author: Nicole Forke
+; Date:   25 January 2020
+; Modified By: Nicole Forke
+; Description: Client Side JavaScript
+;========================================================
+-->
+
+<!-- Expected Output
+  SHOPPING LIST v.1
+  1. Oranges
+  2. Apples
+  3. Pears
+  4. Limes
+  5. Lemons
+  SHOPPING LIST v.2
+  Id | Item
+  1  | Oranges
+  2  | Apples
+  3  | Pears
+  4  | Limes
+  5  | Lemons -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+
+  <!-- root directory css file -->
+  <link rel="stylesheet" type="text/css" href="..\site.css">
+
+</head>
+<body>
+  <!-- create ordered list v.1-->
+  <script>
+    document.write(`
+    <h1>SHOPPING LIST v.1</h1>
+    <ol>
+      <li>Oranges</li>
+      <li>Apples</li>
+      <li>Pears</li>
+      <li>Limes</li>
+      <li>Lemons</li>`);
+
+  </script>
+
+<div id="list"></div>
+
+  <!-- create table list v.2 -->
+  <script>
+    document.getElementById('list').innerHTML = "<h1>SHOPPING LIST v.2</h1>" +
+    "<table>" +
+    "<thead>" +
+    "<tr>" +
+    "<th>Id</th>" +
+    "<th>Item</th>" +
+    "</tr>" +
+    "</thead>" +
+    "<tbody>" +
+    "<tr><td>1</td><td>Oranges</td></tr>" +
+    "<tr><td>2</td><td>Apples</td></tr>" +
+    "<tr><td>3</td><td>Pears</td></tr>" +
+    "<tr><td>4</td><td>Limes</td></tr>" +
+    "<tr><td>5</td><td>Lemons</td></tr>" +
+    "</tbody>"
+    "</table>"
+  </script>
+
+</body>
+</html>
