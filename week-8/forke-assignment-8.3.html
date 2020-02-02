@@ -1,0 +1,156 @@
+<!--
+  ==============================
+  ;Title:  Assignment 8.3
+  ;Author: Nicole Forke
+  ;Date: 01 February 2020
+  ;Modified By: Nicole Forke
+  ;Description: jQuery
+  ==============================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- root directories css file -->
+  <link rel="stylesheet" href="..\site.css">
+
+  <style type="text/css">
+  h2 {
+    font-family:'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-left: 20px;
+  }
+
+  header {
+    background-color: #000000;
+    height: 40px;
+  }
+
+  button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 40px;
+    margin-left: 20px;
+  }
+
+  table {
+    margin-left: 20px;
+  }
+
+  tr:nth-child(even) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: #cccccc;
+  }
+
+  tr:nth-child(odd) {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: #ffffff;
+  }
+
+  th {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: #000000;
+  }
+  </style>
+
+</head>
+<body>
+
+  <header></header>
+
+  <h2>Lorem Ipsum</h2>
+
+  <p>Vestibulum sed efficitur mauris. In vitae felis in mi scelerisque semper nec
+    vitae velit. Duis in mi at nunc facilisis elementum. Proin velit nunc, molestie
+    at hendrerit id, tincidunt eget risus. Pellentesque dolor purus, bibendum a maximus
+    et, finibus sed nisi. Phasellus eleifend cursus magna, in convallis orci finibus
+    vitae. Pellentesque venenatis euismod est. Vestibulum ante ipsum primis in faucibus
+    orci luctus et ultrices posuere cubilia Curae; Pellentesque ultricies velit at urna
+    lacinia suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada
+    fames ac turpis egestas. In quis arcu nisl. Cras sed mattis tellus. Cras luctus eget
+    purus sed pharetra.</p>
+
+    <!-- button to toggle the paragraph's show/hide -->
+
+    <button id="toggle">Toggle</button>
+
+    <!-- table of fruits -->
+  <table>
+    <tbody>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="#" class="fruitId">1</a>
+        </td>
+        <td>Apple</td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="#" class="fruitId">2</a>
+        </td>
+        <td>Orange</td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="#" class="fruitId">3</a>
+        </td>
+        <td>Lemon</td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="#" class="fruitId">4</a>
+        </td>
+        <td>Lime</td>
+      </tr>
+
+      <tr>
+        <td>
+          <a href="#" class="fruitId">5</a>
+        </td>
+        <td>Plum</td>
+      </tr>
+    </tbody>
+  </table>
+
+<script type="text/javascript">
+//toggle buttons click function to hide paragraph
+  $("#toggle").click(function() {
+    $("p").toggle("fast");
+  });
+
+//function to create alert in window
+  $(".fruitId").click(function(event) {
+    event.preventDefault();
+    var fruitId = $(this).text();
+    var fruitType = $(this).closest("td").next().text();
+    alert("{fruit_id: " + fruitId + ", fruit_type: " + fruitType + "}");
+  });
+
+</script>
+
+</body>
+</html>

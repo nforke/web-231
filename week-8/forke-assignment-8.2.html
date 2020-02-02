@@ -1,0 +1,85 @@
+<!--
+  ==============================
+  ;Title:  Assignment 8.2
+  ;Author: Nicole Forke
+  ;Date: 31 January 2020
+  ;Modified By: Nicole Forke
+  ;Description: Dynamic HTML
+  ==============================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+
+  <script src= http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <style type="text/css">
+    ul {
+      list-style: none;
+      margin: 0, auto;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    header {
+      background-color: teal;
+      height: 40px;
+    }
+   </style>
+</head>
+
+<header></header>
+
+<body>
+
+<div id="fruits"></div>
+
+
+<script>
+  //array of fruits
+  var fruits = [{
+    id:'1',
+    type:'Apple',
+  },
+  {
+    id:'2',
+    type:'Orange',
+  },
+  {
+    id:'3',
+    type:'Lemon',
+  },
+  {
+    id:'4',
+    type:'Lime',
+  },
+  {
+    id:'5',
+    type:'Plum',
+  }];
+
+  //dynamic html output
+  var out = '<h2>Fruit</h2><ul>';
+
+  for(var x=0; x<fruits.length; x++){
+    out += '<li>' + fruits[x].type + '</li>';
+  };
+  out += '</ul>';
+
+  document.getElementById('fruits').innerHTML = out;
+</script>
+
+</body>
+</html>

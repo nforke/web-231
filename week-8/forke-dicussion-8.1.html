@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Title:  Discussion 8.1 -->
+<!-- Author: Nicole Forke -->
+<!-- Date: 29 January 2020 -->
+<!-- Modified By: Nicole Forke -->
+<!-- Description: DOM Manipulation -->
+
+<!-- Expected Output:
+  After clicking h1 should have black background with white text
+  p should have a black border around it -->
+
+<head>
+  <meta charset="UTF-8">
+  <script src= http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js></script>
+  <title>Discussion 8.1</title>
+
+  <!--CSS Styles to change with jQuery-->
+<style>
+  body {
+    background-color: white;
+  }
+
+  h1 {font-family:Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      color: black;
+  }
+
+  p {font-family:Arial, Helvetica, sans-serif;
+     font-size: 12px;
+     line-height: 1.4em;
+     color: black;
+  }
+
+  .heading {margin-left: 20px;
+            margin-top: 20px;
+            padding: 10px;
+  }
+
+  .info {margin-left: 20px;
+         margin-top: 20px;
+         max-width: 500px;
+         padding: 10px;
+  }
+  </style>
+</head>
+
+<body>
+
+  <!--click function to change css-->
+<script>
+$(function(){
+    $('.heading').click(function(){
+      $(this).css(background-color, 'black');
+    $('h1').css('color', 'white');
+    });
+});
+
+  $(function(){
+    $('.info').click(function(){
+      $(info).css('border', 'solid black 2px');
+    });
+  });
+</script>
+
+  <div class= heading>
+    <h1>Lorem Ipsum</h1>
+  </div>
+
+  <div class= info>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar justo nunc,
+      tincidunt lacinia diam molestie id. Sed vulputate id turpis eu pretium.
+      Donec eget facilisis felis, ac imperdiet nulla. Vestibulum interdum malesuada orci,
+      eget vestibulum lectus pellentesque aliquam. Sed iaculis a augue vitae tempor.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis diam nec
+      velit venenatis, quis finibus dui laoreet. Cras nec enim quis velit malesuada ornare
+      sed in lorem. Quisque quam lorem, laoreet at pellentesque aliquam, finibus ac arcu.
+      Ut aliquam augue orci, eget convallis mi luctus et. Phasellus consectetur aliquam
+      magna, maximus convallis neque dignissim sit amet.
+    </p>
+  </div>
+
+</body>
+</html>
